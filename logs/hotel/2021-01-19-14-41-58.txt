@@ -1,0 +1,182 @@
+-----------------------------------Parameters-----------------------------------
+>>> model: racl
+>>> task: hotel
+>>> n_epochs: 69
+>>> batch_size: 16
+>>> lr: 0.0069
+>>> global_dim: 300
+>>> domain_dim: 100
+>>> max_sentence_len: 106
+>>> n_interactions: 4
+>>> keep_prob_1: 1.0
+>>> keep_prob_2: 1.0
+>>> n_filters: 64
+>>> kernel_size: 3
+>>> optimizer: adam
+>>> random_type: normal
+>>> random_seed: 41020
+>>> aspect_weight: 1.0
+>>> opinion_weight: 1.0
+>>> sentiment_weight: 1.3
+>>> regularization_weight: 0.0001
+>>> label_smoothing: 0.0
+>>> finetune_embeddings: False
+>>> feed_text_embeddings: False
+>>> load_pretrained: False
+>>> include_opinion: True
+>>> n_classes: 3
+>>> emb_dim: 400
+>>> is_training: True
+>>> class_weights: [0.2, 0.5, 0.3]
+>>> data_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel
+>>> vocab_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\word2id.txt
+>>> global_WE_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\global_embeddings.npy
+>>> domain_WE_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\domain_embeddings.npy
+>>> train_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\train
+>>> test_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\test
+>>> val_path: C:\Users\HCG\Hash Consulting Grp Pte Ltd\AIML - General\DSKPO1 - Sentiment Analysis\3. Approaches\Aspect Based Sentiment Analysis\src\data\hotel\val
+>>> vocab_size: 2260
+
+
+Epoch 000 - Evaluation in 11 seconds
+		opinion_f1=0.0246198, aspect_f1=0.0094488, sentiment_acc=0.0000000, sentiment_f1=0.0000000, ABSA_f1=0.0000000
+Epoch 001 - Evaluation in 11 seconds
+		opinion_f1=0.0289455, aspect_f1=0.0138355, sentiment_acc=0.0000000, sentiment_f1=0.0000000, ABSA_f1=0.0000000
+Epoch 002 - Evaluation in 11 seconds
+		opinion_f1=0.0267041, aspect_f1=0.0092308, sentiment_acc=0.1666667, sentiment_f1=0.0952381, ABSA_f1=0.0015613
+Epoch 003 - Evaluation in 11 seconds
+		opinion_f1=0.0300341, aspect_f1=0.0048038, sentiment_acc=0.0000000, sentiment_f1=0.0000000, ABSA_f1=0.0000000
+Epoch 004 - Evaluation in 11 seconds
+		opinion_f1=0.0180859, aspect_f1=0.0165289, sentiment_acc=0.0000000, sentiment_f1=0.0000000, ABSA_f1=0.0000000
+Epoch 005 - Evaluation in 11 seconds
+		opinion_f1=0.0195636, aspect_f1=0.0491228, sentiment_acc=0.0857143, sentiment_f1=0.0526316, ABSA_f1=0.0042674
+Epoch 006 - Evaluation in 11 seconds
+		opinion_f1=0.0235814, aspect_f1=0.0454223, sentiment_acc=0.1250000, sentiment_f1=0.0740741, ABSA_f1=0.0057554
+Epoch 007 - Evaluation in 11 seconds
+		opinion_f1=0.0193165, aspect_f1=0.0447330, sentiment_acc=0.1290323, sentiment_f1=0.0761905, ABSA_f1=0.0058522
+Epoch 008 - Evaluation in 11 seconds
+		opinion_f1=0.0550576, aspect_f1=0.0644719, sentiment_acc=0.1489362, sentiment_f1=0.0864197, ABSA_f1=0.0097290
+Epoch 009 - Evaluation in 11 seconds
+		opinion_f1=0.0417867, aspect_f1=0.0843989, sentiment_acc=0.2121212, sentiment_f1=0.1166666, ABSA_f1=0.0181229
+Epoch 010 - Evaluation in 11 seconds
+		opinion_f1=0.0849230, aspect_f1=0.0893561, sentiment_acc=0.1911765, sentiment_f1=0.1083333, ABSA_f1=0.0172987
+Epoch 011 - Evaluation in 11 seconds
+		opinion_f1=0.1316614, aspect_f1=0.1633393, sentiment_acc=0.3185185, sentiment_f1=0.3341165, ABSA_f1=0.0526315
+Epoch 012 - Evaluation in 11 seconds
+		opinion_f1=0.2459016, aspect_f1=0.3075444, sentiment_acc=0.3980892, sentiment_f1=0.3276782, ABSA_f1=0.1215953
+Epoch 013 - Evaluation in 11 seconds
+		opinion_f1=0.3280586, aspect_f1=0.4038112, sentiment_acc=0.4380734, sentiment_f1=0.3759078, ABSA_f1=0.1755514
+Epoch 014 - Evaluation in 11 seconds
+		opinion_f1=0.4081496, aspect_f1=0.5170499, sentiment_acc=0.4787402, sentiment_f1=0.4568525, ABSA_f1=0.2445695
+Epoch 015 - Evaluation in 11 seconds
+		opinion_f1=0.4689246, aspect_f1=0.5728721, sentiment_acc=0.4527778, sentiment_f1=0.4566948, ABSA_f1=0.2569964
+Epoch 016 - Evaluation in 11 seconds
+		opinion_f1=0.5265348, aspect_f1=0.5786118, sentiment_acc=0.4675000, sentiment_f1=0.4130737, ABSA_f1=0.2682926
+Epoch 017 - Evaluation in 11 seconds
+		opinion_f1=0.5855988, aspect_f1=0.6393072, sentiment_acc=0.4759036, sentiment_f1=0.4608155, ABSA_f1=0.3017570
+Epoch 018 - Evaluation in 11 seconds
+		opinion_f1=0.5733522, aspect_f1=0.6919040, sentiment_acc=0.4729282, sentiment_f1=0.4382980, ABSA_f1=0.3253515
+Epoch 019 - Evaluation in 11 seconds
+		opinion_f1=0.6149341, aspect_f1=0.6915549, sentiment_acc=0.5272145, sentiment_f1=0.3863344, ABSA_f1=0.3628351
+Epoch 020 - Evaluation in 11 seconds
+		opinion_f1=0.6195001, aspect_f1=0.6101938, sentiment_acc=0.5258103, sentiment_f1=0.3897043, ABSA_f1=0.3185454
+Epoch 021 - Evaluation in 11 seconds
+		opinion_f1=0.6565217, aspect_f1=0.6328379, sentiment_acc=0.5502336, sentiment_f1=0.4121608, ABSA_f1=0.3459419
+Epoch 022 - Evaluation in 11 seconds
+		opinion_f1=0.6656523, aspect_f1=0.7722243, sentiment_acc=0.5508560, sentiment_f1=0.4149463, ABSA_f1=0.4235385
+Epoch 023 - Evaluation in 11 seconds
+		opinion_f1=0.6924480, aspect_f1=0.7747957, sentiment_acc=0.5468432, sentiment_f1=0.4241103, ABSA_f1=0.4231678
+Epoch 024 - Evaluation in 11 seconds
+		opinion_f1=0.6993995, aspect_f1=0.7373701, sentiment_acc=0.6386139, sentiment_f1=0.4635234, ABSA_f1=0.4685797
+Epoch 025 - Evaluation in 11 seconds
+		opinion_f1=0.6994091, aspect_f1=0.7545001, sentiment_acc=0.6280992, sentiment_f1=0.4716192, ABSA_f1=0.4722330
+Epoch 026 - Evaluation in 11 seconds
+		opinion_f1=0.7296011, aspect_f1=0.7877885, sentiment_acc=0.6034649, sentiment_f1=0.4636596, ABSA_f1=0.4735649
+Epoch 027 - Evaluation in 11 seconds
+		opinion_f1=0.6926100, aspect_f1=0.8356545, sentiment_acc=0.6499033, sentiment_f1=0.4850337, ABSA_f1=0.5423728
+Epoch 028 - Evaluation in 11 seconds
+		opinion_f1=0.7425414, aspect_f1=0.8066037, sentiment_acc=0.6250000, sentiment_f1=0.4799292, ABSA_f1=0.5025927
+Epoch 029 - Evaluation in 11 seconds
+		opinion_f1=0.7388441, aspect_f1=0.8118195, sentiment_acc=0.6390244, sentiment_f1=0.4805923, ABSA_f1=0.5169692
+Epoch 030 - Evaluation in 11 seconds
+		opinion_f1=0.7399296, aspect_f1=0.7844891, sentiment_acc=0.6011617, sentiment_f1=0.5427909, ABSA_f1=0.4697428
+Epoch 031 - Evaluation in 11 seconds
+		opinion_f1=0.7644703, aspect_f1=0.8359345, sentiment_acc=0.6759259, sentiment_f1=0.5776591, ABSA_f1=0.5637065
+Epoch 032 - Evaluation in 11 seconds
+		opinion_f1=0.7296800, aspect_f1=0.7949666, sentiment_acc=0.7023697, sentiment_f1=0.5198785, ABSA_f1=0.5563063
+Epoch 033 - Evaluation in 10 seconds
+		opinion_f1=0.7802827, aspect_f1=0.8397963, sentiment_acc=0.7017045, sentiment_f1=0.6250980, ABSA_f1=0.5885623
+Epoch 034 - Evaluation in 11 seconds
+		opinion_f1=0.7351955, aspect_f1=0.8535233, sentiment_acc=0.6606975, sentiment_f1=0.5014410, ABSA_f1=0.5630522
+Epoch 035 - Evaluation in 11 seconds
+		opinion_f1=0.7895125, aspect_f1=0.8543689, sentiment_acc=0.6705202, sentiment_f1=0.5677108, ABSA_f1=0.5716632
+Epoch 036 - Evaluation in 12 seconds
+		opinion_f1=0.7774878, aspect_f1=0.8591065, sentiment_acc=0.7034358, sentiment_f1=0.5966188, ABSA_f1=0.6028671
+Epoch 037 - Evaluation in 11 seconds
+		opinion_f1=0.7975830, aspect_f1=0.8484126, sentiment_acc=0.6885714, sentiment_f1=0.5991029, ABSA_f1=0.5825946
+Epoch 038 - Evaluation in 11 seconds
+		opinion_f1=0.7931547, aspect_f1=0.8658043, sentiment_acc=0.7248577, sentiment_f1=0.6119674, ABSA_f1=0.6267432
+Epoch 039 - Evaluation in 11 seconds
+		opinion_f1=0.7810164, aspect_f1=0.8155487, sentiment_acc=0.5737393, sentiment_f1=0.4828709, ABSA_f1=0.4663573
+Epoch 040 - Evaluation in 11 seconds
+		opinion_f1=0.8048961, aspect_f1=0.8562644, sentiment_acc=0.7296804, sentiment_f1=0.6073589, ABSA_f1=0.6232449
+Epoch 041 - Evaluation in 11 seconds
+		opinion_f1=0.7916053, aspect_f1=0.8709929, sentiment_acc=0.7296804, sentiment_f1=0.6066337, ABSA_f1=0.6341269
+Epoch 042 - Evaluation in 11 seconds
+		opinion_f1=0.7959791, aspect_f1=0.8555858, sentiment_acc=0.7379630, sentiment_f1=0.6306380, ABSA_f1=0.6297905
+Epoch 043 - Evaluation in 12 seconds
+		opinion_f1=0.7871305, aspect_f1=0.8633663, sentiment_acc=0.7369403, sentiment_f1=0.6119572, ABSA_f1=0.6350482
+Epoch 044 - Evaluation in 11 seconds
+		opinion_f1=0.8202160, aspect_f1=0.8912337, sentiment_acc=0.7238184, sentiment_f1=0.6216179, ABSA_f1=0.6438582
+Epoch 045 - Evaluation in 10 seconds
+		opinion_f1=0.8222970, aspect_f1=0.8799380, sentiment_acc=0.7170994, sentiment_f1=0.6064675, ABSA_f1=0.6297169
+Epoch 046 - Evaluation in 10 seconds
+		opinion_f1=0.8180807, aspect_f1=0.8952755, sentiment_acc=0.7379249, sentiment_f1=0.6274000, ABSA_f1=0.6594724
+Epoch 047 - Evaluation in 11 seconds
+		opinion_f1=0.8370144, aspect_f1=0.8833592, sentiment_acc=0.7358997, sentiment_f1=0.6425098, ABSA_f1=0.6487766
+Epoch 048 - Evaluation in 11 seconds
+		opinion_f1=0.8354912, aspect_f1=0.8921875, sentiment_acc=0.7497774, sentiment_f1=0.6614891, ABSA_f1=0.6677240
+Epoch 049 - Evaluation in 11 seconds
+		opinion_f1=0.8451242, aspect_f1=0.8959999, sentiment_acc=0.7229791, sentiment_f1=0.6285524, ABSA_f1=0.6466287
+Epoch 050 - Evaluation in 10 seconds
+		opinion_f1=0.8271466, aspect_f1=0.8602969, sentiment_acc=0.7326733, sentiment_f1=0.6531140, ABSA_f1=0.6288142
+Epoch 051 - Evaluation in 10 seconds
+		opinion_f1=0.7436357, aspect_f1=0.8574757, sentiment_acc=0.7493088, sentiment_f1=0.6611368, ABSA_f1=0.6409144
+Epoch 052 - Evaluation in 11 seconds
+		opinion_f1=0.8169761, aspect_f1=0.8554733, sentiment_acc=0.7367933, sentiment_f1=0.6310099, ABSA_f1=0.6287069
+Epoch 053 - Evaluation in 11 seconds
+		opinion_f1=0.8580294, aspect_f1=0.9040650, sentiment_acc=0.7456542, sentiment_f1=0.6600783, ABSA_f1=0.6729975
+Epoch 054 - Evaluation in 10 seconds
+		opinion_f1=0.8665123, aspect_f1=0.9133413, sentiment_acc=0.7594255, sentiment_f1=0.6750935, ABSA_f1=0.6925910
+Epoch 055 - Evaluation in 10 seconds
+		opinion_f1=0.8616328, aspect_f1=0.9082278, sentiment_acc=0.7502214, sentiment_f1=0.6640397, ABSA_f1=0.6803212
+Epoch 056 - Evaluation in 11 seconds
+		opinion_f1=0.8750480, aspect_f1=0.9234468, sentiment_acc=0.7511033, sentiment_f1=0.6754419, ABSA_f1=0.6927146
+Epoch 057 - Evaluation in 11 seconds
+		opinion_f1=0.8591065, aspect_f1=0.9199839, sentiment_acc=0.7528889, sentiment_f1=0.6632164, ABSA_f1=0.6917109
+Epoch 058 - Evaluation in 11 seconds
+		opinion_f1=0.8477334, aspect_f1=0.9206740, sentiment_acc=0.7502271, sentiment_f1=0.6768921, ABSA_f1=0.6897703
+Epoch 059 - Evaluation in 11 seconds
+		opinion_f1=0.8532423, aspect_f1=0.9209987, sentiment_acc=0.7504521, sentiment_f1=0.6843736, ABSA_f1=0.6902286
+Epoch 060 - Evaluation in 11 seconds
+		opinion_f1=0.8337095, aspect_f1=0.8570339, sentiment_acc=0.7628959, sentiment_f1=0.6687221, ABSA_f1=0.6522243
+Epoch 061 - Evaluation in 11 seconds
+		opinion_f1=0.8226471, aspect_f1=0.8947791, sentiment_acc=0.7589041, sentiment_f1=0.6702671, ABSA_f1=0.6778140
+Epoch 062 - Evaluation in 11 seconds
+		opinion_f1=0.8499054, aspect_f1=0.9191592, sentiment_acc=0.7567084, sentiment_f1=0.6701502, ABSA_f1=0.6945812
+Epoch 063 - Evaluation in 11 seconds
+		opinion_f1=0.8859111, aspect_f1=0.9071597, sentiment_acc=0.7627866, sentiment_f1=0.6875228, ABSA_f1=0.6908945
+Epoch 064 - Evaluation in 11 seconds
+		opinion_f1=0.8867708, aspect_f1=0.9268292, sentiment_acc=0.7640351, sentiment_f1=0.6875469, ABSA_f1=0.7072675
+Epoch 065 - Evaluation in 11 seconds
+		opinion_f1=0.8862504, aspect_f1=0.9080095, sentiment_acc=0.7619893, sentiment_f1=0.6821481, ABSA_f1=0.6908212
+Epoch 066 - Evaluation in 11 seconds
+		opinion_f1=0.8961538, aspect_f1=0.9324758, sentiment_acc=0.7581069, sentiment_f1=0.6823651, ABSA_f1=0.7061224
+Epoch 067 - Evaluation in 11 seconds
+		opinion_f1=0.8941634, aspect_f1=0.8937984, sentiment_acc=0.7619048, sentiment_f1=0.6853549, ABSA_f1=0.6797797
+Epoch 068 - Evaluation in 11 seconds
+		opinion_f1=0.8829380, aspect_f1=0.9354191, sentiment_acc=0.7733217, sentiment_f1=0.7015956, ABSA_f1=0.7226069
+
+
+Testing
+	opinion_f1=0.0000000, aspect_f1=0.9777777, sentiment_acc=0.7954545, sentiment_f1=0.7410333, ABSA_f1=0.7777777
